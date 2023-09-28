@@ -1,44 +1,42 @@
-
-
 ///////////////////////////////////////////////////////////
 // Set Current Year
-const yearEl = document.querySelector('.year');
+const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
 
 ///////////////////////////////////////////////////////////
 // Make mobile navigation work
-const btnNavEl = document.querySelector('.btn-mobile-nav');
-const headerEl = document.querySelector('.header');
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
 
-btnNavEl.addEventListener('click', function () {
-  headerEl.classList.toggle('nav-open');
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
 });
 
 ///////////////////////////////////////////////////////////
 // Smooth Scrolling Animation
-const allLinks = document.querySelectorAll('a:link');
+const allLinks = document.querySelectorAll("a:link");
 allLinks.forEach(function (link) {
-  link.addEventListener('click', function (e) {
+  link.addEventListener("click", function (e) {
     e.preventDefault();
-    const href = link.getAttribute('href');
+    const href = link.getAttribute("href");
 
     // Scroll back to top
     if (href === "#")
       window.scrollTo({
         top: 0,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
 
     // Scroll to other links
-    if (href !== "#" && href.startsWith('#')) {
+    if (href !== "#" && href.startsWith("#")) {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
 
     // Close mobile navigation
-    if (link.classList.contains('main-nav-link')) {
-      headerEl.classList.toggle('nav-open');
+    if (link.classList.contains("main-nav-link")) {
+      headerEl.classList.toggle("nav-open");
     }
   });
 });
@@ -89,4 +87,3 @@ function checkFlexGap() {
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
 checkFlexGap();
-
