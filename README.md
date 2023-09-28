@@ -1,7 +1,7 @@
 # **OmniFood**
 This website was created in order to showcase my skills as a web developer. I created this in order to become more comfortable with HTML and CSS, while also providing a way for employers to see my work.
 
-![Alt text](https://loganmceldowney-website.netlify.app/img/omnifood-long.png)
+![Alt text](https://loganmceldowney.dev//img/omnifood-website-full.png)
 
 ## **Project Purpose & Goal**
 The purpose of creating this project was in order to become more comfortable working with HTML & CSS. This project was a part of a course I was taking on Udemy in order to learn these skills better. Therefore, by creating this website, I was able to become much more proficient at writing HTML and CSS as a whole. The main goal for creating this project was being able to create a very professional looking meal-delivery-service website that could be used to demonstrate my skills.
